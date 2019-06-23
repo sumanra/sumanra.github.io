@@ -1,44 +1,288 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Activity 1: Basic HTML Bio</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Suman Raj - Home</title>
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="bootstrap-4.1.3-dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="static/css/style.css">
+	<link rel="stylesheet" href="static/css/fixed.css">
+
+	<!-- Font Awesome libarary -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
 </head>
 
-<body>
+<body data-spy="scroll" data-target="#navbarResponsive">
 
-  <h1>Suman Raj</h1>
+<!-- HomePage -->
+<div id="home">
 
-  <img src="linkdin.jpg" alt="Suman Raj">
+<!-- Navbar -->
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+	<a class="navbar-brand" href="#">
+		<!-- Logo -->
+		Suman Raj
+	</a>
 
-  <p>Suman, a Data Analyst who is working towards a professional certification from Data Analyst Boot Camp at U of T,
-     upgrading technical skills is a professional with an inquisitive mind, and the ability to mine hidden patterns
-      within structured and unstructured data. Certified CTFL (Certified Tester, Foundation Level) and 
-      OCA (Oracle Certified Associate) who is eager learner with a passion for technology, constantly absorbing
-      new skills. Proven-experience working with data in team-oriented environments equips her for a full-time
-      Data Engineer position.</p>
-  
+		<!-- collapse when screen get small -->
+	<button type="button" class="navbar-toggler" data-toggle="collapse" 
+	data-target=".navbar-collapse">
+	<span class="navbar-toggler-icon"></span>
+	</button>
 
-  <ul>
-    <li><strong>Email:</strong> <a href="#">sumanraj27in@gmail.com</a></li>
-    <li><strong>Github:</strong> <a href="#">sumanra</a></li>
-    <li><strong>Twitter:</strong> <a href="#">coming soon</a></li>
-  </ul>
-  <p><strong>Projects:</strong></p>
-  <table>
-    <tr>
-      <th>Project Name</th>
-      <th>Link</th>
-      
-    </tr>
-    <tr>
-      <td><strong> 1.</strong> Web-Visualization-Dashboard </td>
-      <td><li><a href="#"> https://sumanra.github.io/Web/ </a></li></td>
-      
-    </tr>
-   
-  </table>
+	<div class="collapse navbar-collapse" id="navbarResponsive"> 
+	<!-- ml-auto: Setting navbar to right -->
+		<ul class="nav navbar-nav ml-auto">
+			<!-- active class makes current location brighter -->
+			<li class="nav-item">
+			<!-- #home goes to <div id="home">  -->
+			<a class="nav-link" href="#home">Home</a>
+			</li>
+			<li class="nav-item">
+			<a class="nav-link" href="#about_me">About Me</a>
+			</li>
+			<li class="nav-item">
+			<a class="nav-link" href="#projects">Projects</a>
+			</li>
+			<li class="nav-item">
+			<a class="nav-link" href="#References">References</a>
+			</li>
+			<li class="nav-item">
+			<a class="nav-link" href="#contact">Contact</a>
+			</li>
+		</ul>
+	</div>
+</nav>
 
+<!-- End of Navbar -->
+
+<!----------- Background Page ---------->
+<div class="landing">
+  <div class="home-wrap">
+	<div class="home-inner">
+	</div>
+  </div>
+</div>
+  <div class="caption text-center">
+		<div class="line typewriter">
+			<h1> Suman Raj</h1>
+			<h4>Data Analyst | &nbsp Traveller</h4>
+			<a class="btn btn-outline-light btn-lg" href="#about_me"><span>Who Am I ?</span></a>
+		</div>
+  </div>
+
+
+<!----------- About Me Section --------->
+<div id="about_me" class="offset">
+  <div class="narrow">
+  	<div class="col-12">
+		<h3 class="heading text-center">About Me</h3>
+		<div class="heading-underline"></div>
+	</div>
+	<div class="col-md-4">
+			<img src="static/images/linkdin.jpg" alt="pic of Suman Raj">
+		</div>
+	<!-- Creating 3 sections -->
+	<div class="row text-center AM_row">
+
+		<div class="col-md-4">
+			<div class="goals">
+				<h4>Goals</h4>
+				<i class="fas fa-globe-americas fa-2x"></i>
+				<p>Entering field of Banking by applying data science techniques to make sense of what is happening and hopefully predict the future. Later I want to
+					devote my time towards using the datas for customer satisfaction.
+				</p>
+			</div>
+		</div>
+		<div class="col-md-4">
+			<div class="interests">
+				<h4>Interests</h4>
+				<i class="fas fa-hiking fa-2x"></i>
+				<p>Enjoy activities where I can appreciate the nature such as hiking, travelling and photography.
+				</p>
+			</div>
+		</div>
+		<div class="col-md-4">
+			<div class="Academics">
+				<h4>Experience</h4>
+				<i class="fas fa-book fa-2x"></i>
+				<p>Data Analyst with the ability to mine hidden gems located within large sets of structured, semi-structured and raw data.
+				Equipped with newly acquired skills and an insatiable intellectual curiosity. Moreover, four years of progressive software testing
+				and development experience in web-based, standalone, and client/server applications. I am certified Data Analytics and
+				visualization graduate from boot camp UofT, CTFL (Certified Tester, Foundation Level) and OCA (Oracle Certified Associate). </p>
+			</div>
+		</div>
+	</div>
+  </div>
+</div>
+
+
+<!--------------- Projects Section ----------------->
+<div id="projects" class="offset">
+<!-- jumbotron gives grey bg -->
+<div class="col-12 text-center jumbotron">
+	<h3 class="heading space_top">Projects</h3>
+	<div class="heading-underline"></div>
+	
+	<div class="row text-center">
+
+		<div class="col-lg-3 container">
+			<a href="https://github.com/sumanra/Stock-financial-data-visualization" target="_blank">
+				<img class="img-top" src="static/images/projects/Stock.jpg" alt="">
+				<img class="img-bot" src="static/images/projects/Stock.jpg" alt="">
+				<div class="text middle">
+					<h3 style="color:charcoal;">Stock Financial Data Visualization</h3>
+				</div>
+			</a>
+	
+			<div class="project-info">
+				<p>
+				<b>Design:</b> To create Interactive visual representation of eight US Stock data.
+				 A user will be able to interactively view various information about these companies which helps them make informative investment decisions.
+				<br>
+				<b>Skills:</b> Python, Javascript(d3, plotly), html5, css3(bootstrap), </p>
+			</div>
+		</div>
+
+		<div class="col-lg-3 container">
+			<a href="https://github.com/sumanra/Earthquake-Visualization" target="_blank">
+				<img class="img-top" src="static/images/projects/earthquake.png" alt="">
+				<img class="img-bot" src="static/images/projects/gifs/earthquake.gif" alt="">
+				
+				
+				<div class="text middle">
+					<h3 style="color: rgb(225, 236, 227); top: 50px;">Earthquake Visualizer</h3>
+				</div>
+			</a>
+
+			<div class="project-info">
+					<p>
+					<b>Design:</b> Where does earthquake occur most often and why? <br>find out how we can help and hopefully get some insight
+					on earthquake occurence patterns. Datas are updated every minute.
+					<br>
+					<b>Skills:</b> Javascript(GeoJSON, leaflet, d3), html5, css3(bootstrap), </p>
+				</div>
+		</div>
+
+		<div class="col-lg-3 container belly">
+			<!-- <h3>Interactive Dashboard</h3> -->
+			<a href="https://github.com/sumanra/Belly-Button-Biodiversity" target="_blank">
+				<img class="img-top" src="static/images/projects/bellybutton.png" alt="">
+				<img class="img-bot" src="static/images/projects/gifs/bellybutton.gif" alt="">
+				
+				<!-- <img class="project-gifs" src="static/images/projects/gifs/bellybutton.gif" alt=""> -->
+				
+				<div class="text middle">
+					<h3>Interactive Dashboard</h3>
+				</div>
+			</a>
+
+			<div class="project-info">
+				<p>
+					<b>Design:</b> Play with dashboard to see 1000 different sample information of their bellybutton biodiversity
+					<br>
+					<b>Skills:</b> Python(flask), Javascript(d3, plotly), html5, css3(bootstrap), </p>
+			</div>
+		</div>
+
+		<div class="col-lg-3 container">
+			<a href="https://github.com/sumanra/Data-Journalism-and-D3" target="_blank">
+				<img id="datajournalism" class="img-top" src="static/images/projects/datajournalism.png" alt="">
+				<img class="img-bot" src="static/images/projects/gifs/datajournalism.gif" alt="">
+				
+				<!-- <img class="project-gifs" src="static/images/projects/gifs/bellybutton.gif" alt=""> -->
+				
+				<div class="text middle">
+					<h3>Data Journalism</h3>
+				</div>
+			</a>
+			<div class="project-info">
+				<p>
+					<b>Design:</b> Multi-axis data visualization, play around with axis labels to see different plots. 
+					<br>
+					<b>Skills:</b> Python(flask), Javascript(d3, plotly), html5, css3(bootstrap, keyframes)</p>
+			</div>
+		</div>
+
+	</div>
+	
+</div>
+</div>
+
+
+
+<!---------------- References Section ------------------>
+<div id="References" class="offset">
+<div class="jumbotron">
+	<div class="col-12 text-center">
+		<h3 class="heading">References</h3>
+		<div class="heading-underline"></div>
+	</div>
+	<!-- separate into 2 sections then within it separate into 4/12 and 8/12 -->
+	<div class="row">
+		<div class="col-md-6 quotes">
+		<div class="row">
+			<div class="col-md-4">
+				<img src="static/images/Winnie_Wu.jpg" alt="pic of Winnie Wu">
+			</div>
+			<div class="col-md-8">
+				<blockquote>
+					<i class="fas fa-quote-left"></i>
+					Suman and I are classmates in the UofT Data Analytics program.
+					Suman is a team player, detailed oriented and takes pride in her project work.
+					Her skill set and her personality will make her a valuable asset to any organization.
+					<hr class="quotes-hr">
+					<cite>&#8212; Ms. Winnie Wu</cite>
+				</blockquote>
+			</div>
+		</div>
+		</div>
+
+		<div class="col-md-6 quotes">
+		<div class="row">
+			<div class="col-md-4">
+				<img src="static/images/Ashok_Bundela.png" alt="pic of Ashok Bundela">
+			</div>
+			<div class="col-md-8">
+				<blockquote>
+					<i class="fas fa-quote-left"></i>
+					Suman is a highly skilled professional ,
+					she is very confident, dynamic, self motivated & disciplined personality.
+					We had work together in bajaj group. It was nice experience to work with suman.
+					Suman ensure that she adds value to the organisation she works with.
+					<hr class="quotes-hr">
+					<cite>&#8212; Mr.Ashok Bundela</cite>
+				</blockquote>
+			</div>
+		</div>
+		</div>
+	</div>
+</div>
+</div>
+
+<!---------------- Contact Section ----------------->
+<div id="contact" class="offset">
+	<footer>
+		<div class="row justify-content-center">
+			<div class="col-md-5 text-center">
+				<strong>Contact Info</strong>
+				<p>(647) 928-3224<br>sumanraj27in@gmail.com</p>
+				<a href="https://github.com/sumanra/" target="_blank"><i class="fab fa-github"></i></a>
+				<!-- <a href="" target="_blank"><i class="fab fa-instagram"></i></a> -->
+				<a href="https://www.linkedin.com/in/suman-raj-80736552/" target="_blank"><i class="fab fa-linkedin"></i></a>
+			</div>
+		</div>
+	</footer>
+</div>
+
+<!-- Closing Home div -->
+</div>
+
+
+<script src="static/js/fontawesome-all.min.js"></script>
 </body>
 
 </html>
